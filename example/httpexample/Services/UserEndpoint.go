@@ -15,6 +15,7 @@ type UserResponse struct{
 
 func GetUserEndpoint(userService IUserService) endpoint.Endpoint{
 	return func(ctx context.Context, request interface{}) (response interface{}, err error){
+		// request is passed by DecodeUserRequest
 		r := request.(UserRequest)
 		result := userService.GetName(r.Uid)
 		return UserResponse{Result:result}, nil
