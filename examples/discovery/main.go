@@ -4,7 +4,7 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"github.com/longjoy/micro-go-book/ch6-discovery/config"
+	"im-micro/examples/discovery/config"
 	"github.com/longjoy/micro-go-book/ch6-discovery/discover"
 	"github.com/longjoy/micro-go-book/ch6-discovery/endpoint"
 	"github.com/longjoy/micro-go-book/ch6-discovery/service"
